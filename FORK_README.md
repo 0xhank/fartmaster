@@ -1,9 +1,10 @@
+
 ### Step 1: Fork the Repository
 
 First, fork the repository to your GitHub account.
 
 ```
-https://github.com/example/repository-name
+https://github.com/0xhank/fartmaster
 ```
 
 ### Step 2: Clone Your Fork
@@ -11,8 +12,8 @@ https://github.com/example/repository-name
 Clone your forked repository to your local machine.
 
 ```
-git clone https://github.com/YOUR_USERNAME/repository-name
-cd app-template
+git clone https://github.com/YOUR_USERNAME/fartmaster
+cd fartmaster
 ```
 
 ### Step 3: Install Dependencies
