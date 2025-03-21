@@ -1,0 +1,36 @@
+---
+description: Deployment configuration and best practices for the Fart App Landing project
+globs: package.json, .vercel/**, README.md, FORK_README.md
+---
+
+# Deployment
+
+## Vercel Configuration
+- Project uses Vercel for deployment
+- Deploy scripts are defined in package.json
+- Production deploy: `npm run deploy` or `pnpm deploy`
+- Preview deploy: `npm run test-deploy` or `pnpm test-deploy`
+- Vercel CLI is installed as a dev dependency
+
+## Deployment Process
+- First deployment requires Vercel account login
+- CLI guides through project linking and configuration
+- Subsequent deployments use saved configuration
+- GitHub integration can be set up for automatic deployments on push
+
+## Environment Variables
+- Sensitive information should be set in Vercel dashboard
+- Environment variables should not be committed to the repository
+- Use `.env.local` for local development only
+
+## Build Optimization
+- Next.js builds are optimized by default
+- Vercel automatically handles Next.js optimizations
+- Large assets should be stored in the `public` directory
+- Preload critical assets for better performance
+
+## Troubleshooting
+- Check build logs in Vercel dashboard for errors
+- Verify environment variables are correctly set
+- Test local build with `npm run build` before deploying
+- Use preview deployments to test changes before going to production 
